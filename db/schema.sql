@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS burgers_db;
+
 -- Create the database day_planner_db and specified it for use.
 CREATE DATABASE burgers_db;
 
