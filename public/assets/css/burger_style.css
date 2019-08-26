@@ -6,3 +6,30 @@ body {
     text-align: center;
     margin: 20px auto;
 }
+
+#myBurgers {
+    float: left;
+}
+
+#eatenBurgers {
+    float: right;
+}
+
+h2, h1 {
+    margin: 20px;
+    color: brown;
+    font-weight: bold;
+}
+
+.btn {
+    font-size: 10px;
+}
+
+.creatNew {
+    font-size: 15px;
+}
+
+p {
+    font-size: 12px;
+    margin: 10px;
+}

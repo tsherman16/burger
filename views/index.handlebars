@@ -8,9 +8,9 @@
 <div class="row">
     <div class="col-6">
         <div id="avail-style">
-            <h2>Available Burgers!</h2>
+            <h2 id="myBurgers">Available Burgers!</h2>
 
-            <ul>
+            <ul id="myBurgers">
                 {{#each burgers}}
                 {{#unless devoured}}
                 {{> burgers/burger-block devoured=true}}
@@ -22,9 +22,9 @@
 
     <div class="col-6">
         <div id="devour-style">
-            <h2>Burgers that have been DEVOURED!</h2>
+            <h2 id="eatenBurgers">Burgers DEVOURED!</h2>
 
-            <ul>
+            <ul id="eatenBurgers">
                 {{#each burgers}}
                 {{#if devoured}}
                 {{> burgers/burger-block devoured=false}}
@@ -45,7 +45,8 @@
                 <input type="text" id="ca" name="burger_name">
             </div>
 
-            <button type="submit">Add Burger</button>
+            <button type="submit" class="btn btn-success btn-lg creatNew">Add Burger</button>
+            <p> Enter a burger you want to eat and click the Add Burger button.</p>
         </form>
     </div>
 </div>
